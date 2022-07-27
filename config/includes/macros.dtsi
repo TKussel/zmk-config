@@ -10,6 +10,66 @@
  */
 / {
     macros {
+	m_auml: auml {
+            compatible = "zmk,behavior-macro";
+            label = "auml";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <
+                &kp DQT &kp A
+            >;
+        };
+	m_ouml: ouml {
+            compatible = "zmk,behavior-macro";
+            label = "ouml";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <
+                &kp DQT &kp O
+            >;
+        };
+	m_uuml: uuml {
+            compatible = "zmk,behavior-macro";
+            label = "uuml";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <
+                &kp DQT &kp U
+            >;
+        };
+	m_sh_auml: sh_auml {
+            compatible = "zmk,behavior-macro";
+            label = "Auml";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <
+                &kp DQT &kp LS(A)
+            >;
+        };
+	m_sh_ouml: sh_ouml {
+            compatible = "zmk,behavior-macro";
+            label = "Ouml";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <
+                &kp DQT &kp LS(O)
+            >;
+        };
+	m_sh_uuml: sh_uuml {
+            compatible = "zmk,behavior-macro";
+            label = "Uuml";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <
+                &kp DQT &kp LS(U)
+            >;
+        };
 
         m_type_email_p: type_email_p {
             compatible = "zmk,behavior-macro";

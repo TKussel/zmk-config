@@ -5,6 +5,91 @@
     behaviors {
 
         /*
+         * A Umlaut
+         *
+         * Usage: &mm_auml
+         * Tap: "a
+         * Shift-Tap: "A
+         */
+        mm_auml: auml {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_UML";
+            #binding-cells = <0>;
+            bindings = <&m_auml>, <&m_sh_auml>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+
+            // Requires forked zmk that supports this feature
+            // https://github.com/zmkfirmware/zmk/pull/1114
+            //
+            // Ensures that when pressing Shift-Delete only delete is sent
+            // and not Shift-Delete
+            masked_mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        /*
+         * O Umlaut
+         *
+         * Usage: &mm_ouml
+         * Tap: "o
+         * Shift-Tap: "O
+         */
+        mm_ouml: ouml {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_UML";
+            #binding-cells = <0>;
+            bindings = <&m_ouml>, <&m_sh_ouml>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+
+            // Requires forked zmk that supports this feature
+            // https://github.com/zmkfirmware/zmk/pull/1114
+            //
+            // Ensures that when pressing Shift-Delete only delete is sent
+            // and not Shift-Delete
+            masked_mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        /*
+         * u Umlaut
+         *
+         * Usage: &mm_uuml
+         * Tap: "u
+         * Shift-Tap: "U
+         */
+        mm_uuml: uuml {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_UML";
+            #binding-cells = <0>;
+            bindings = <&m_uuml>, <&m_sh_uuml>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+
+            // Requires forked zmk that supports this feature
+            // https://github.com/zmkfirmware/zmk/pull/1114
+            //
+            // Ensures that when pressing Shift-Delete only delete is sent
+            // and not Shift-Delete
+            masked_mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        /*
+         * Various quotes
+         *
+         * Usage: &mm_quot
+         * Tap: "
+         * Shift-Tap: '
+         * Hold: `
+         */
+        mm_quot: quot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTATION_TICK";
+            #binding-cells = <0>;
+            bindings = <&hm DQT GRAVE>, <&kp SQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+
+            // Requires forked zmk that supports this feature
+            // https://github.com/zmkfirmware/zmk/pull/1114
+            //
+            // Ensures that when pressing Shift-Delete only delete is sent
+            // and not Shift-Delete
+            masked_mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        /*
          * Shifted Backspace deletes
          *
          * Usage: &mm_bspc_del
