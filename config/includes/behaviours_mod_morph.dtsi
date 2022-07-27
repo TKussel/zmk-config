@@ -58,14 +58,14 @@
             label = "U_UML";
             #binding-cells = <0>;
             bindings = <&m_uuml>, <&m_sh_uuml>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
 
             // Requires forked zmk that supports this feature
             // https://github.com/zmkfirmware/zmk/pull/1114
             //
             // Ensures that when pressing Shift-Delete only delete is sent
             // and not Shift-Delete
-            masked_mods = <(MOD_LSFT|MOD_RSFT)>;
+            masked_mods = <(MOD_LALT|MOD_RALT)>;
         };
         /*
          * Various quotes
