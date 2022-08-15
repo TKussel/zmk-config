@@ -60,9 +60,7 @@
 
     Nav_layer {
       label = "Nav";
-      bindings = <
-        &trans &none &none &none &none &none &none &none &none &none &none &trans &trans &kp LG(Q) &kp LG(W) &hm_l LS(LC(LG(LALT))) LS(LC(TAB)) &kp LC(TAB) &kp LG(GRAVE) &kp PG_UP &kp LA(LEFT) &kp UP &kp LA(RIGHT) &none &trans &trans &kp H &kp J &kp K &kp L &none &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &none &trans &trans &kp LG(Z) &kp LS(D) &hm_l LC(LG(LALT)) LS(U) &kp LG(V) &kp LG(V) &trans &kp SPACE &none &kp LG(LEFT) &none &kp LG(RIGHT) &none &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-      >;
+      bindings = < &trans &none &none &none &none &none &none &none &none &none &none &trans &trans &kp LG(Q) &kp LG(W) &hm_l LS(LC(LG(LALT))) LS(LC(TAB)) &kp LC(TAB) &kp LG(GRAVE) &kp PG_UP &kp LA(LEFT) &kp UP &kp LA(RIGHT) &kp HOME &trans &trans &kp H &kp J &kp K &kp L &none &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &kp END &trans &trans &kp LG(Z) &kp LC(D) &hm_l LC(LG(LALT)) LC(U) &kp LG(V) &kp LG(V) &trans &kp SPACE &none &kp LG(LEFT) &none &kp LG(RIGHT) &none &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans >;
       sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
     };
 

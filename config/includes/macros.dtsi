@@ -78,11 +78,11 @@
             wait-ms = <30>;
             tap-ms = <40>;
             bindings = <
-                &kp N &kp I &kp L
+                &kp S &kp I &kp G &kp N &kp U &kp P
                 &kp AT_SIGN
-                &kp N &kp I &kp L &kp M &kp A &kp I &kp L
+                &kp T &kp O &kp B &kp I &kp A &kp S &kp K &kp U &kp S &kp S &kp E &kp L
                 &kp DOT
-                &kp C &kp O
+                &kp D &kp E
             >;
         };
 
@@ -93,12 +93,13 @@
             wait-ms = <30>;
             tap-ms = <40>;
             bindings = <
-                &kp H &kp O &kp S &kp T &kp M &kp A &kp S &kp T &kp E &kp R
-                &kp AT_SIGN
-                &kp I &kp N &kp F &kp U &kp S &kp E &kp D
-                &kp I &kp N &kp S &kp I &kp G &kp H &kp T
+                &kp T &kp O &kp B &kp I &kp A &kp S
                 &kp DOT
-                &kp C &kp O &kp M
+                &kp K &kp U &kp S &kp S &kp E &kp L
+                &kp AT_SIGN
+                &kp D &kp K &kp F &kp Z &kp MINUS &kp H &kp E &kp I &kp D &kp E &kp L &kp B &kp E &kp R &kp G
+                &kp DOT
+                &kp D &kp E
             >;
         };
 
