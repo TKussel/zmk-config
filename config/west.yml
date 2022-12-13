@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: zmkfirmware-infused-kim
       url-base: https://github.com/infused-kim
+    - name: zmkfirmware-tkussel
+      url-base: https://github.com/tkussel
   projects:
     # - name: zmk
     #   remote: zmkfirmware
@@ -11,7 +13,7 @@ manifest:
     #   import: app/west.yml
     - name: zmk
       remote: zmkfirmware-infused-kim
-      revision: aa-my-customizations-z3
+      revision: sofle
       import: app/west.yml
   self:
     path: config
